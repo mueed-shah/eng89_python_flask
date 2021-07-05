@@ -1,10 +1,3 @@
-# MVC (Model-View-Controller) with Python Flask
-## Python Flask
-
-- Flask is a Python micro-framework
-
-
-```Python
 # Installing flask
 
 from flask import Flask
@@ -35,5 +28,3 @@ def welcome():
 @app.route("/login/")
 def login():
     return "<h1> Enter your details to login </h1> <br> <h2> must follow correct credentials </h2>"
-```
-![diagram](mvc.png)
