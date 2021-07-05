@@ -21,9 +21,6 @@ def index():
     return " Welcome to DevOps Eng 89 DevOps team"
 
 
-print(index())
-
-
 # create a welcome page
 @app.route("/welcome/")  # best practice to have / at end to load page for both cases
 def welcome():
