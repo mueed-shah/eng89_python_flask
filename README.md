@@ -49,5 +49,15 @@ def login():  # redirect, url_for needs to be imported to redirect users
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@flask_app.route("/toprank")
+def toprank():
+    jobs_list = dt.top_rank1()
+    return render_template("toprank.html", jobs=jobs_list)
+
+@flask_app.route("/toplive")
+def toplive():
+    jobs_list = dt.top_live_jobs1()
+    return render_template("toplive.html", jobs=jobs_list)
 ```
 ![diagram](mvc.png)
